@@ -1,0 +1,187 @@
+mongoose.connection.db.dropDatabase();
+
+var users=[{
+  username:"krishna",
+  password:"krishna@123",
+  role:"admin",
+  availabilityStatus:"Available"
+},{
+  username:"roopa",
+  password:"roopa@123",
+  role:"customer",
+  availabilityStatus:"Available"
+},{
+  username:"rimika",
+  password:"rimika@123",
+  role:"customer",
+  availabilityStatus:"Offline"
+},{
+  username:"arun",
+  password:"arun@123",
+  role:"customer",
+  availabilityStatus:"Available"
+},{
+  username:"roshan",
+  password:"roshan@123",
+  role:"customer",
+  availabilityStatus:"Available"
+},{
+  username:"khalid",
+  password:"khalid@123",
+  role:"customer",
+  availabilityStatus:"Available"
+}];
+
+users.forEach(function(user){
+    new Userlist(user).save();
+});
+
+var products=[{
+  pdtName:"Gamia Laptop",
+  pdtPrice:33000,
+  pdtCode:"lt-023",
+  pdtDescription:"An excellent choice for an awesome gaming experience.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"roopa",
+  pdtImg:"/Images/Laptop.jpg"
+},{
+  pdtName:"Ind Mobile EX321",
+  pdtPrice:8999,
+  pdtCode:"im-022",
+  pdtDescription:"This will take you to next level of communication.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"rimika",
+  pdtImg:"/Images/Mobile.png"
+},{
+  pdtName:"Khaadi Shirt",
+  pdtPrice:982,
+  pdtCode:"ks-029",
+  pdtDescription:"Best suitable for tropical climate.",
+  pdtCategory:"Costumes",
+  avgFeedback:0,
+  purchasedUser:"roopa",
+  pdtImg:"/Images/Shirt.jpg"
+},{
+  pdtName:"Ind Mobile EX321",
+  pdtPrice:8999,
+  pdtCode:"im-022",
+  pdtDescription:"This will take you to next level of communication.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"roopa",
+  pdtImg:"/Images/Mobile.png"
+},{
+  pdtName:"Gamia Laptop",
+  pdtPrice:33000,
+  pdtCode:"lt-023",
+  pdtDescription:"An excellent choice for an awesome gaming experience.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"arun",
+  pdtImg:"/Images/Laptop.jpg"
+},{
+  pdtName:"Gamia Laptop",
+  pdtPrice:33000,
+  pdtCode:"lt-023",
+  pdtDescription:"An excellent choice for an awesome gaming experience.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"khalid",
+  pdtImg:"/Images/Laptop.jpg"
+},{
+  pdtName:"Khaadi Shirt",
+  pdtPrice:982,
+  pdtCode:"ks-029",
+  pdtDescription:"Best suitable for tropical climate.",
+  pdtCategory:"Costumes",
+  avgFeedback:0,
+  purchasedUser:"roshan",
+  pdtImg:"/Images/Shirt.jpg"
+},{
+  pdtName:"Khaadi Shirt",
+  pdtPrice:982,
+  pdtCode:"ks-029",
+  pdtDescription:"Best suitable for tropical climate.",
+  pdtCategory:"Costumes",
+  avgFeedback:0,
+  purchasedUser:"khalid",
+  pdtImg:"/Images/Shirt.jpg"
+},{
+  pdtName:"NI Power Bank",
+  pdtPrice:599,
+  pdtCode:"pb-099",
+  pdtDescription:"Execellent power bank having mini usb connector.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"khalid",
+  pdtImg:"/Images/PowerBank.jpg"
+},{
+  pdtName:"NI Power Bank",
+  pdtPrice:599,
+  pdtCode:"pb-099",
+  pdtDescription:"Execellent power bank having mini usb connector.",
+  pdtCategory:"Electronics",
+  avgFeedback:0,
+  purchasedUser:"rimika",
+  pdtImg:"/Images/PowerBank.jpg"
+}];
+
+products.forEach(function(pdt){
+  new ProductSchema(pdt).save();
+});
+
+var productDetails=[{
+  pdtCode:"lt-023",
+  feedbackDetails:[{
+    user:"roopa",
+    body:"Awesome product at an affordable range. Go for it.",
+    rating:4.2
+  },{
+    user:"rimika",
+    body:"Not upto the mark. Gets heated soon",
+    rating:3.7
+  },{
+    user:"krishna",
+    body:"Worst product. First of all , received very late. Forget about it",
+    rating:2.7
+  }]
+},{
+  pdtCode:"im-022",
+  feedbackDetails:[{
+    user:"roopa",
+    body:"Looks fine",
+    rating:4
+  },{
+    user:"rimika",
+    body:"good one at this range of price.",
+    rating:4.4
+  },{
+    user:"krishna",
+    body:"GPS less accurate. Rest everything is fine.",
+    rating:2
+  }]
+},{
+  pdtCode:"ks-029",
+  feedbackDetails:[{
+    user:"roopa",
+    body:"Good for the climate.",
+    rating:4.3
+  }]
+},{
+  pdtCode:"pb-099",
+  feedbackDetails:[{
+    user:"khalid",
+    body:"Very bad product. Discharge rate is very high and getting heated quickly.",
+    rating:2
+  },{
+    user:"rimika",
+    body:"Average",
+    rating:3
+  }]
+}];
+
+productDetails.forEach(function(pdt){
+  new ProductDetails(pdt).save();
+});

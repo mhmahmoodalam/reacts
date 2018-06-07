@@ -1,21 +1,21 @@
-.sudoku {
+.suduko {
     display: flex;
     flex-direction: column;
     flex: 1 100%;
     border: 2px solid grey;
 }
 
-.sudoku-title {
+.suduko-title {
     font-weight: bold;
     font-size: 1.6em;
 }
 
-.sudoku-row {
+.suduko-row {
     flex: 1;
     display: flex;
 }
 
-.sudoku-box {
+.suduko-box {
     flex: 1;
     border: 1px solid grey;
 }

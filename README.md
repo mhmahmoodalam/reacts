@@ -23,5 +23,9 @@ This app takes a two part approach to solving a sudoku. Hit 'solve' to have the 
 To clear the sudoku boards click 'Clear'.
 
 ### New Game
-To start a new game click 'Clear'.
+To start a new game click 'New Game'.
 
+
+### Author
+checkout my profile here.
+* [Muhammed Mahmood Alam](http://mhmahmoodalam.github.io) 

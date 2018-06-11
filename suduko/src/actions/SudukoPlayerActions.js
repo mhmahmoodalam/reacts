@@ -2,7 +2,7 @@ export const SET_VALUE = 'SET_VALUE'
 export const SELECT_CELL = 'SELECT_CELL'
 export const SOLVE_PUZZLE = 'SOLVE_PUZZLE'
 export const CLEAR_PUZZLES = 'CLEAR_PUZZLES'
-
+export const NEW_GAME = 'NEW_GAME'
 /**
  * Creates action to set cell to a value.
  * @param x x index of value being set.
@@ -50,5 +50,14 @@ export function solvePuzzle() {
 export function clearPuzzles() {
     return {
         type: CLEAR_PUZZLES
+    }
+}
+
+/**
+ * Creates action to start a new game.
+ */
+export function newGame() {
+    return {
+        type: NEW_GAME
     }
 }

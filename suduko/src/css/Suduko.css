@@ -1,8 +1,7 @@
 .suduko {
     display: flex;
-    flex-direction: column;
     flex: 1 100%;
-    border: 2px solid grey;
+    border: 2px solid black;
 }
 
 .suduko-title {
@@ -16,9 +15,11 @@
 }
 
 .suduko-box {
-    flex: 1;
-    border: 1px solid grey;
+    flex: 1 100%;
+    border: 1px solid black;
+    align-content: stretch;
 }
+
 
 .grid {
     min-width: 162px;

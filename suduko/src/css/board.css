@@ -10,13 +10,14 @@ button:focus {
 }
 
 .solver-header {
-  background-color: #222;
+  background-color: #f00;
   height: 40px;
   padding: 10px;
-  color: white;
+  color: red;
 }
 
 .solver-title {
+    color: white;
   font-size: 1.5em;
 }
 

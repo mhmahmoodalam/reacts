@@ -40,7 +40,8 @@ export function selectCell(x, y) {
  */
 export function solvePuzzle() {
     return {
-        type: SOLVE_PUZZLE
+        type: SOLVE_PUZZLE,
+        isLoading: true
     }
 }
 

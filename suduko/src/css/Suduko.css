@@ -9,22 +9,6 @@
     font-size: 1.6em;
 }
 
-.suduko-row {
-    flex: 1;
-    display: flex;
-}
-
-.suduko-box {
-    flex: 1 100%;
-    border: 1px solid black;
-    align-content: stretch;
-}
-
-
-.grid {
-    min-width: 162px;
-}
-
 
 .cell {
    width: 50px;

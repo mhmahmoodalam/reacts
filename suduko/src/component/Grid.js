@@ -8,7 +8,7 @@ import { CellContainer } from '../container/CellContainer';
  export default class Grid extends Component {
      render() {
          return (
-             <div className="grid">
+             <div className="d-flex flex-column justify-content-start">
                  <div className="grid-row">
                      <CellContainer x={this.props.x} y={this.props.y} type={this.props.type}/>
                      <CellContainer x={this.props.x} y={1 + this.props.y} type={this.props.type}/>

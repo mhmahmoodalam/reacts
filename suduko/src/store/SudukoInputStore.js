@@ -42,7 +42,7 @@ export let initalState = {
     ],
 }
 
-export function solver(state = initalState, action) {
+export function solvers(state = initalState, action) {
     switch (action.type) {
         case SET_VALUE: {
             const { x, y } = action.payload
@@ -176,4 +176,4 @@ export function solver(state = initalState, action) {
     }
 }
 
-export default createStore(solver)
+export default createStore(solvers)
